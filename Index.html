@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PiggyVest | Dashboard</title>
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- Beginning of stylesheet -->
+<style>
+
+/* Styling of general body and background*/  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #062863;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url("bg img 2.png") , url("bg img 1.png"), url("bg img 4.png"), url("bg img 3.png");
+    background-size: 15%, 15%, 15%, 15%;
+    background-position: left -1% top -15%, right -7.5% top -1%, left -5% bottom -10%, right -5% bottom -5%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Styling of image */ 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+/* Styling of form container */ 
+.centralize {
+    max-width: 450px;
+    max-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+
+/* Styling of content with the containers */
+.container {
+    padding: 40px;
+    background-color: white;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.container h1{
+    color: #083e9e;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+}
+
+.container p {
+    color: #4a5568;
+    font-size: .875rem;
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: Karla, sans-serif;
+}
+
+.container label{
+    font-size: .75rem;
+    color: #4a5568;
+    margin-bottom: .25rem;
+    line-height: 2;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+}
+
+.container input select option{
+    color: #edf2f7;
+    padding-left: .75rem;
+    padding-right: .5rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #edf2f7;
+    line-height: inherit;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=cars], input[type=tel]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 0 solid #e2e8f0;
+    background: #edf2f7;
+    color: #1a202c;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#SM {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 0 solid #e2e8f0;
+    background: #edf2f7;
+    color: #1a202c;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* register button*/
+.registerbtn {
+    background-color: rgb(8, 62, 158);
+    font-size: .875rem;
+    flex-direction: row;
+    width: 100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-family: Montserrat ,sans-serif;
+    border: none;
+    border-bottom-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* login section*/
+.login{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+    font-size: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-weight: 400;
+    font-family: Karla, sans-serif;
+    justify-content: center;
+}
+</style>
+</head>
+
+<!-- Beginning of html -->
+<body>
+    <img src="pvest-logo-grey.png" alt="Piggybank Logo" height="70px" width="191px" class="mb-12">
+    <div class="centralize">
+        <form action="/action_page.php">
+          <div class="container">
+              <h1>Create a Secure Account</h1>
+              <p>Welcome to the future of Savings and Investments</p>
+
+              <label for="full name"><b>Full Name</b></label>
+              <input type="text" placeholder="Full Name" name="full Name" required>
+
+              <label for="email"><b>Email Address</b></label>
+              <input type="email" placeholder="Email Address" name="email" required>
+
+              <label for="number"><b>Phone Number</b></label>
+              <input type="tel" placeholder="Phone Number" name="number" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="code"><b>Referrer Phone or Promo Code (Optional)</b></label>
+              <input type="text" placeholder="Referrer Phone or Code" name="Code">
+
+              <label for="code"><b>How Did You Hear About Us? (Optional)</b></label>
+              <select id="SM" name="Social Media" form="SM">
+                  <option value="volvo">Click to select</option>
+                  <option value="volvo">Facebook</option>
+                  <option value="saab">Twitter</option>
+                  <option value="opel">Instagram</option>
+                  <option value="audi">Friend/Family/Coworker Referrer</option>
+                  <option value="opel">Google Search</option>
+                  <option value="opel">Google Playstore</option>
+                  <option value="opel">Online Blog</option>
+                  <option value="opel">Local Newspaper</option>
+                  <option value="opel">At an event</option>
+                  <option value="opel">Other</option>
+              </select>
+              <!-- register button -->
+              <button type="submit" class="registerbtn">Create Account</button>
+          </div>
+        </form>
+        <!-- Login Section -->
+        <p class="login"><a style="text-decoration:none; color: rgb(179, 179, 179);" href="#">Already have an account? Log in</a>.</p>
+    </div>
+
+</body>
+</html>
